@@ -47,7 +47,7 @@
                     <div @class('col-4 mt-2 ps-0 pe-1')>
                             <div @class('card border-1 ss')>
                                 <div @class('card-header bg-headcard text-dark')>
-                                    <h6 @class('fs-6 text-center mb-0 p-0')>ORDER BY</h6>
+                                    <h6 @class('fs-6 text-center mb-0 p-0')>NAMA</h6>
                                 </div>
                                 <div @class('card-body')>
 
@@ -81,10 +81,10 @@
                     <div @class('col-12 d-flex justify-content-center p-3')>
                         <div @class('col-6 border border-3 border-dark pt-2 pb-2')>
                             <h1 @class('fs-2 text-center mb-0')>
-                                PREMIUM VVIP
+                                {{$tipe}}
                             </h1>
                             <h6 @class('fs-12 text-center mb-1')>
-                                Ordered On {{$trxdate}}
+                                {{$tglpelaksanaan}}
                             </h6>
 
                         </div>
@@ -93,10 +93,7 @@
                         <div @class('col-12 bg-white d-flex align-items-center justify-content-center p-5 pb-2 pt-2')>
                             <div @class('ps-5 pe-5 text-center')>
                                 <h5 @class('fs-6 mb-0 text-center')>
-                                    Sahid Raya Hotel & Convention Yogyakarta, Jl. Babarsari No 2 Tambak Bayan, Depok, Sleman
-                                </h5>
-                                <h5 @class('fs-6 mb-0')>
-                                    Loket Headquarter
+                                    {{$venue}}
                                 </h5>
                             </div>
 
@@ -116,22 +113,22 @@
                         <div @class('row w-100 pb-3')>
                             <div @class('col-5 ps-0 pe-0')>
                                 <h5 @class('fs-6 mb-0')>
-                                    TRANSACTION ID
+                                    ID TRANSAKSI
                                 </h5>
                             </div>
                             <div @class('col-7 ps-0 pe-0')>
                                 <h5 @class('fs-6 mb-0')>
-                                    : <strong>93012930192390</strong>
+                                    : <strong>{{$trxid}}</strong>
                                 </h5>
                             </div>
                             <div @class('col-5 ps-0 pe-0 mt-3')>
                                 <h5 @class('fs-6 mb-0')>
-                                    TRANSACTION DATE
+                                    TANGGAL TRANSAKSI
                                 </h5>
                             </div>
                             <div @class('col-7 ps-0 pe-0 mt-3')>
                                 <h5 @class('fs-6 mb-0')>
-                                    : <strong>93012930192390</strong>
+                                    : <strong>{{$trxdate}}</strong>
                                 </h5>
                             </div>
                         </div>

@@ -16,15 +16,20 @@ class TDController extends Controller
     public function download(){
 
        $data=[
-            'eventname'=>'Tipe Kemarin',
-            'penyelenggara'=>'Penyelenggaras',
-            'harga'=>number_format(50000),
+            'eventname'=>'Jogjarockarta Festival',
+            'tglpelaksanaan'=>'24 September 2022',
+            'penyelenggara'=>'Rajawali Indonesia',
+//            'harga'=>number_format(50000),
             'qrcode'=>'9000.QR.0929',
             'trxid'=>'GXDFP002940',
             'trxname'=>'Ir. Joko Widodo',
             'trxmail'=>'xmod@gmail.com',
             'trxphone'=>'00929883883',
-           'trxdate'=>'20 September 2022'];
+           'trxdate'=>'24 September 2022',
+           'tipe'=>'REGULER DAY 1',
+           'venue'=>'TEBING BREKSI YOGYAKARTA',
+//           'loket'=>''
+       ];
         return view('download', $data);
 
 
