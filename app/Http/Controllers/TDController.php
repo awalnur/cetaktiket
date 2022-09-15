@@ -21,7 +21,10 @@ class TDController extends Controller
             'harga'=>number_format(50000),
             'qrcode'=>'9000.QR.0929',
             'trxid'=>'GXDFP002940',
-            'trxname'=>'Ir. Joko Widodo'];
+            'trxname'=>'Ir. Joko Widodo',
+            'trxmail'=>'xmod@gmail.com',
+            'trxphone'=>'00929883883',
+           'trxdate'=>'20 September 2022'];
         return view('download', $data);
 
 
