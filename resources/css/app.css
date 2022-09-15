@@ -1,0 +1,16 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "style.css";
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #print * {
+        visibility: visible;
+    }
+    #print {
+        margin-top: 0 !important;
+        -webkit-print-color-adjust: exact;
+        background-color: red;
+        position: absolute;
+    }
+}
